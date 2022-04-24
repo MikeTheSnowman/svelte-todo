@@ -39,7 +39,10 @@
         <button typeof="submit" class="w-full shadow-sm rounded bg-blue-500 hoge:bg-blue-600 text-white py-2 px-4">Login</button>
     </form>
 {:else if loading}
-    <div class="flex flex-col text-sm mb-2 text-center" style="justify-content:center; align-items:center">
+    <div class="flex flex-col text-sm mb-2 text-center items-center justify-center">
         <Circle2 size="60"></Circle2>
+        <h1 class="text-2xl font-bold text-center text-gray-800 md:text-3xl">
+            Please wait...
+        </h1>
     </div>
 {/if}
