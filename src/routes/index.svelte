@@ -3,6 +3,7 @@
   import Todo from "../components/Todo.svelte";
   import {todos, loadTodos} from "../stores/todoStore";
   loadTodos();
+
 </script>
 
 <main>
