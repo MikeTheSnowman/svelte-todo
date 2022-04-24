@@ -1,11 +1,12 @@
 <script>
-import { get } from 'svelte/store';
+    import { get } from 'svelte/store';
 
-    import {addTodo, todos} from '../stores/todoStore'
+    import {addTodo, todos} from '../stores/todoStore';
+    import{user} from "../stores/authStore.js";
 
     let todo = '';
     const handleSubmit = () => {
-        addTodo(todo);
+        addTodo(todo, $user.id);
         console.log("submitting todo value: " + todo);
         todo = '';
     }

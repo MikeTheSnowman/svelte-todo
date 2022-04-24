@@ -1,7 +1,8 @@
 <script>
-  import TodoForm from "../components/TodoForm.svelte"
-  import Todo from "../components/Todo.svelte"
-  import {todos} from "../stores/todoStore"
+  import TodoForm from "../components/TodoForm.svelte";
+  import Todo from "../components/Todo.svelte";
+  import {todos, loadTodos} from "../stores/todoStore";
+  loadTodos();
 </script>
 
 <main>
